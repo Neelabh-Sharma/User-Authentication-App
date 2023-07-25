@@ -1,0 +1,20 @@
+<div class="row mt-5 text-dark">
+    <div class="col-md-6 m-auto">
+        <div class="card card-body text-center bg-white"style="border-radius: 10px;">
+            <h2>
+                Forgot Password
+            </h2>
+            <%- include ("./messages") %>
+            <form action="/auth/forgot" method="POST">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email" />
+                </div>
+                <button type="submit" class="btn btn-info btn-block">Reset Password</button>
+            </form>
+            <p class="mt-4">
+                Remember your password? <a href="/auth/login">Login</a>
+            </p>
+        </div>
+    </div>
+</div>
